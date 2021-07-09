@@ -3,6 +3,7 @@ package com.knk.insa;
 public class Insa implements InsaM {
 
   public static void main(String[] args) {
+    System.out.println("asd");
     // TODO Auto-generated method stub
 
   }
