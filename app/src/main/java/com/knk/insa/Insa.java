@@ -2,18 +2,22 @@ package com.knk.insa;
 
 import java.util.Scanner;
 
-public class Insa implements InsaM {
+public class Insa {
 
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     Kwak kw = new Kwak();
-    int sel = 9;
+    Nam nam = new Nam();
+    Kim kim = new Kim();
+
+
+    int sel = 7;
     while(true) {
-      System.out.println("\n1.투숙 2.퇴실 3.map 9.종료 >>> ");
+      System.out.println("\n1.등록 2.조회 3.검색  4.수정 5. 삭제 6. 정렬 7.종료 >>> ");
       sel = Integer.parseInt(sc.nextLine());
-      if(sel == 9) {
-        System.out.println("호텔 예약 프로그램을 종료합니다.");
+      if(sel == 7) {
+        System.out.println("프로그램을 종료합니다.");
         System.exit(1);
       }
       switch(sel) {
@@ -21,19 +25,19 @@ public class Insa implements InsaM {
           kw.insert();
           break;
         case 2:
-          select();
+          kim.select();
           break;
         case 3:
-          ser();
+          kw.ser();
           break;
         case 4:
-          up();
+          nam.up();
           break;
         case 5:
-          del();
+          nam.del();
           break;
         case 6:
-          order();
+          kim.order();
           break;
         default:
           System.out.println("잘못된 번호를 입력하셨습니다.");
@@ -42,40 +46,6 @@ public class Insa implements InsaM {
 
   }
 
-  @Override
-  public void insert() {
-    // TODO Auto-generated method stub
 
-  }
-
-  @Override
-  public void select() {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  public void ser() {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  public void up() {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  public void del() {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  public void order() {
-    // TODO Auto-generated method stub
-
-  }
 
 }
