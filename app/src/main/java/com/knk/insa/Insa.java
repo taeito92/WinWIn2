@@ -20,15 +20,14 @@ public class Insa {
 
   public static void main(String[] args) {
     Kwak kw = new Kwak();
+    Nam nam = new Nam();
     Insa is = new Insa();
 
-
-    Nam nam = new Nam();
 
 
     int sel = 7;
     while(true) {
-      System.out.print("\n1.등록 2.조회 3.검색  4.수정 5. 삭제 6. 정렬 7.종료 >>> ");
+      System.out.print("\n1.등록 2.조회 3.검색 4.수정 5.삭제 6.정렬 7.종료 >>> ");
       sel = Integer.parseInt(is.sc.nextLine());
       if(sel == 7) {
         System.out.println("프로그램을 종료합니다.");
