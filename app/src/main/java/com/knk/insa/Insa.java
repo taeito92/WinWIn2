@@ -1,5 +1,8 @@
 package com.knk.insa;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.Scanner;
 
 public class Insa {
@@ -11,11 +14,18 @@ public class Insa {
     Nam nam = new Nam();
     Kim kim = new Kim();
 
+    Connection CN = null; 
+    Statement ST = null; 
+    ResultSet RS = null; 
+    String msg = "isud=crud쿼리문기술";
+    Scanner sc1 = new Scanner(System.in);
+
+
 
     int sel = 7;
     while(true) {
       System.out.println("\n1.등록 2.조회 3.검색  4.수정 5. 삭제 6. 정렬 7.종료 >>> ");
-      sel = Integer.parseInt(sc.nextLine());
+      sel = Integer.parseInt(sc1.nextLine());
       if(sel == 7) {
         System.out.println("프로그램을 종료합니다.");
         System.exit(1);

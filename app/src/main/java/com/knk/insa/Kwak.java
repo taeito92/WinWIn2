@@ -28,7 +28,7 @@ public class Kwak implements InsaM {
       System.out.print("직급입력>>>"); 
       String c = sc.nextLine();
       System.out.print("연봉입력>>>"); 
-      int d = sc.nextInt();
+      int d = Integer.parseInt(sc.nextLine());
       System.out.print("부서입력>>>"); 
       String e = sc.nextLine();
       System.out.print("전화번호입력>>>"); 
