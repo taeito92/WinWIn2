@@ -21,6 +21,7 @@ public class Insa {
   public static void main(String[] args) {
     Kwak kw = new Kwak();
     Nam nam = new Nam();
+    Kim kim = new Kim();
     Insa is = new Insa();
 
 
@@ -38,7 +39,7 @@ public class Insa {
           kw.insert();
           break;
         case 2:
-          nam.select();
+          kim.select();
           break;
         case 3:
           kw.ser();
@@ -50,7 +51,7 @@ public class Insa {
           nam.del();
           break;
         case 6:
-          nam.order();
+          kim.order();
           break;
         default:
           System.out.println("잘못된 번호를 입력하셨습니다.");
